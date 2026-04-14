@@ -1,0 +1,438 @@
+/* ============================================================
+   SmartFileAI — Abyss Cyan Dark Theme
+   ============================================================ */
+
+* {
+    font-family: "Segoe UI", sans-serif;
+    outline: none;
+}
+
+QMainWindow, QWidget {
+    background-color: #0B1118;
+    color: #E6F1FF;
+}
+
+/* ---- SIDEBAR ---- */
+#Sidebar {
+    background-color: #101923;
+    border-right: 1px solid #1C2A3A;
+}
+
+#AppTitle {
+    color: #36CFC9;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0px 0px 4px 0px;
+}
+
+#AppSubtitle {
+    color: #4D6780;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+#SidebarButton {
+    background-color: transparent;
+    color: #9CB3C9;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#SidebarButton:hover {
+    background-color: #152231;
+    color: #D3E0EC;
+}
+
+#SidebarButtonActive {
+    background-color: #163447;
+    color: #36CFC9;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    border-left: 3px solid #36CFC9;
+}
+
+#StatusDot {
+    color: #4CDDA3;
+    font-size: 11px;
+}
+
+/* ---- PAGE TITLES ---- */
+#PageTitle {
+    color: #E6F1FF;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#PageSubtitle {
+    color: #5F7D9A;
+    font-size: 12px;
+}
+
+/* ---- SEARCH BAR ---- */
+#SearchInput {
+    background-color: #111D29;
+    border: 1px solid #233244;
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: #E6F1FF;
+    font-size: 14px;
+    selection-background-color: #36CFC9;
+}
+
+#SearchInput:focus {
+    border: 1px solid #36CFC9;
+    background-color: #152231;
+}
+
+#SearchInput::placeholder {
+    color: #3C556D;
+}
+
+/* ---- BUTTONS ---- */
+#PrimaryButton {
+    background-color: #36CFC9;
+    color: #072129;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 24px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#PrimaryButton:hover {
+    background-color: #2FB8B3;
+}
+
+#PrimaryButton:pressed {
+    background-color: #269D98;
+}
+
+#PrimaryButton:disabled {
+    background-color: #27384A;
+    color: #4D6780;
+}
+
+#SecondaryButton {
+    background-color: #152231;
+    color: #9CB3C9;
+    border: 1px solid #22364A;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#SecondaryButton:hover {
+    background-color: #1C2E40;
+    color: #D3E0EC;
+    border-color: #36CFC9;
+}
+
+#IconButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    color: #5F7D9A;
+    font-size: 13px;
+}
+
+#IconButton:hover {
+    background-color: #152231;
+    color: #36CFC9;
+}
+
+/* ---- RESULT CARDS ---- */
+#ResultCard {
+    background-color: #101923;
+    border: 1px solid #1C2A3A;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+#ResultCard:hover {
+    border: 1px solid #2B445B;
+    background-color: #111D29;
+}
+
+#ResultFileName {
+    color: #E0ECFA;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#ResultSnippet {
+    color: #7F9AB2;
+    font-size: 12px;
+}
+
+#ScoreBadge {
+    background-color: #163447;
+    color: #36CFC9;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+#FileTypeBadge {
+    background-color: #163028;
+    color: #4CDDA3;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* ---- IMAGE GRID ---- */
+#ImageCard {
+    background-color: #101923;
+    border: 1px solid #1C2A3A;
+    border-radius: 10px;
+}
+
+#ImageCard:hover {
+    border: 1px solid #36CFC9;
+}
+
+#ImageLabel {
+    color: #7F9AB2;
+    font-size: 11px;
+}
+
+/* ---- STATS CARDS ---- */
+#StatCard {
+    background-color: #101923;
+    border: 1px solid #1C2A3A;
+    border-radius: 12px;
+}
+
+#StatNumber {
+    color: #36CFC9;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#StatLabel {
+    color: #5F7D9A;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* ---- SCROLL AREA ---- */
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background-color: #101923;
+    width: 6px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #2B445B;
+    border-radius: 3px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #36CFC9;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    height: 6px;
+    background-color: #101923;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #2B445B;
+    border-radius: 3px;
+}
+
+/* ---- STATUS BAR ---- */
+QStatusBar {
+    background-color: #091018;
+    color: #4D6780;
+    font-size: 11px;
+    border-top: 1px solid #152231;
+}
+
+/* ---- PROGRESS BAR ---- */
+QProgressBar {
+    background-color: #152231;
+    border-radius: 4px;
+    height: 4px;
+    border: none;
+    text-align: center;
+    color: transparent;
+}
+
+QProgressBar::chunk {
+    background-color: #36CFC9;
+    border-radius: 4px;
+}
+
+/* ---- COMBO BOX ---- */
+QComboBox {
+    background-color: #111D29;
+    border: 1px solid #233244;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #E6F1FF;
+    font-size: 13px;
+    min-width: 120px;
+}
+
+QComboBox:hover {
+    border-color: #36CFC9;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #111D29;
+    border: 1px solid #233244;
+    color: #E6F1FF;
+    selection-background-color: #163447;
+    outline: none;
+}
+
+/* ---- SLIDER ---- */
+QSlider::groove:horizontal {
+    height: 4px;
+    background-color: #152231;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #36CFC9;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+
+QSlider::sub-page:horizontal {
+    background-color: #36CFC9;
+    border-radius: 2px;
+}
+
+/* ---- SEPARATOR ---- */
+#Separator {
+    background-color: #152231;
+    max-height: 1px;
+    min-height: 1px;
+}
+
+/* ---- LOADING OVERLAY ---- */
+#LauncherPanel {
+    background-color: #0B1118;
+}
+
+#LauncherGlyph {
+    color: #36CFC9;
+    font-size: 48px;
+}
+
+#LauncherTitle {
+    color: #E6F1FF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#LauncherSubtitle {
+    color: #5F7D9A;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#LauncherProgressText {
+    color: #9CB3C9;
+    font-size: 12px;
+}
+
+#LauncherProgressBar {
+    background-color: #152231;
+    border: 1px solid #1E3144;
+    border-radius: 5px;
+    height: 8px;
+    text-align: center;
+    color: transparent;
+}
+
+#LauncherProgressBar::chunk {
+    background-color: #36CFC9;
+    border-radius: 5px;
+}
+
+#LauncherErrorTitle {
+    color: #FF9B8A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#LauncherErrorText {
+    color: #D3E0EC;
+    font-size: 12px;
+    max-width: 760px;
+}
+
+#LoadingLabel {
+    color: #5F7D9A;
+    font-size: 13px;
+}
+
+#EmptyStateLabel {
+    color: #3C556D;
+    font-size: 14px;
+}
+
+/* ---- SETTINGS ---- */
+#SettingSection {
+    color: #36CFC9;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#SettingLabel {
+    color: #D3E0EC;
+    font-size: 13px;
+}
+
+#SettingDescription {
+    color: #4D6780;
+    font-size: 11px;
+}
+
+#DangerButton {
+    background-color: #2E1A1A;
+    color: #FF8F8F;
+    border: 1px solid #4B2B2B;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#DangerButton:hover {
+    background-color: #3A1C1C;
+    border-color: #FF8F8F;
+}

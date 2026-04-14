@@ -1,0 +1,33 @@
+from PyQt6.QtWidgets import (
+    QWidget, QVBoxLayout, QPushButton
+)
+from PyQt6.QtCore import pyqtSignal
+
+
+class Sidebar(QWidget):
+
+    page_selected = pyqtSignal(str)
+
+    def __init__(self):
+        super().__init__()
+
+        self.setFixedWidth(220)
+
+        layout = QVBoxLayout()
+        self.setLayout(layout)
+
+        buttons = [
+            ("Dashboard", "dashboard"),
+            ("Text Search", "text"),
+            ("Image Search", "image"),
+            ("Face Search", "face"),
+            ("Settings", "settings"),
+        ]
+
+        for text, key in buttons:
+            btn = QPushButton(text)
+            btn.setObjectName("SidebarButton")
+            btn.clicked.connect(lambda _, k=key: self.page_selected.emit(k))
+            layout.addWidget(btn)
+
+        layout.addStretch()
